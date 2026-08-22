@@ -9,6 +9,7 @@
 		"start": "astro dev",
 		"build": "astro build",
 		"postbuild": "pagefind --site dist",
+		"deploy": "astro build && wrangler deploy",
 		"preview": "astro preview",
 		"check": "astro check && biome check",
 		"lint": "biome check --write",
@@ -52,7 +53,8 @@
 		"prettier-plugin-astro": "0.14.1",
 		"prettier-plugin-tailwindcss": "^0.8.0",
 		"reading-time": "^1.5.0",
-		"typescript": "^6.0.3"
+		"typescript": "^6.0.3",
+		"wrangler": "^4.125.0"
 	},
 	"overrides": {
 		"sharp": "^0.34.5"
